@@ -1,6 +1,7 @@
 html, body {
   font-family: lato, sans-serif;
   color: #424551;
+  line-height: 160%;
 }
 
 .wrapper {
@@ -54,6 +55,25 @@ html, body {
 }
 
 .logo {}
+
+.heading {
+  color: #1E212C;
+}
+
+.heading__subtitle {
+  margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heading__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+}
+
 
 /* -------------------------------------------------------- */
 
@@ -230,3 +250,62 @@ html, body {
   line-height: 130%;
   margin-right: 12px;
 }
+
+/* -------------------------------------------------------- */
+
+.about {}
+
+.about__inner {
+}
+
+.about__createx {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+
+.about__createx-content {
+  max-width: 600px;
+  margin-right: 30px;
+}
+
+.about__heading {
+  margin-bottom: 48px;
+}
+
+.about__text {
+  margin-bottom: 60px;
+}
+
+.about__paragraph {
+  margin-bottom: 24px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about__paragraph--accent {
+  color: #1E212C;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.about__btn-box {
+  display: flex;
+}
+
+.about__btn {
+  margin-right: 24px;
+}
+
+.about__btn:last-child {
+  margin-right: 0;
+}
+
+
+.about__img {}
+
+.about__values {}
