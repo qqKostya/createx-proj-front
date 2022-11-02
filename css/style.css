@@ -253,16 +253,30 @@ html, body {
 
 /* -------------------------------------------------------- */
 
-.about {}
-
-.about__inner {
+.about {
+  padding: 180px 0 160px;
+  position: relative;
 }
 
+
+.about__inner {}
+
 .about__createx {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 180px;
+}
+
+.about__createx::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -160px;
+  background: url("../images/decor/1.svg");
+  width: 100px;
+  height: 85px;
 }
 
 .about__createx-content {
@@ -308,4 +322,41 @@ html, body {
 
 .about__img {}
 
-.about__values {}
+.about__values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__numbers {
+  margin-left: 30px;
+  align-self: center;
+}
+
+.about__number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.about__number:last-child {
+  margin-bottom: 0;
+}
+
+.about__number span {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #FF3F3A;
+  margin-right: 16px;
+}
