@@ -17,6 +17,18 @@ html, body {
   height: 100%;
 }
 
+.main__about {
+  padding: 180px 0 160px;
+}
+
+.main__directions {
+  margin-bottom: 178px;
+}
+
+.main__cert {
+  margin-bottom: -46px;
+}
+
 .button {
   display: inline-block;
   padding: 0 40px;
@@ -78,6 +90,7 @@ html, body {
   text-align: center;
 }
 
+/* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
 
 .header {
@@ -165,6 +178,7 @@ html, body {
   color: #FF3F3A;
 }
 
+/* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
 
 .header__body {
@@ -255,14 +269,11 @@ html, body {
 }
 
 /* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
 
 .about {
-  padding: 180px 0 160px;
   position: relative;
 }
-
-
-.about__inner {}
 
 .about__createx {
   position: relative;
@@ -322,9 +333,6 @@ html, body {
   margin-right: 0;
 }
 
-
-.about__img {}
-
 .about__values {
   display: flex;
   justify-content: space-between;
@@ -371,15 +379,12 @@ html, body {
 
 
 /* -------------------------------------------------------- */
-
-
-.directions {
-  margin-bottom: 178px;
-}
+/* -------------------------------------------------------- */
 
 .directions__inner {
   position: relative;
 }
+
 .directions__inner::before {
   content: "";
   position: absolute;
@@ -389,6 +394,7 @@ html, body {
   height: 115px;
   background: url("../images/decor/2.svg") 0 0 no-repeat;
 }
+
 .directions__inner::after {
   content: "";
   position: absolute;
@@ -403,8 +409,6 @@ html, body {
 .directions__heading {
   margin-bottom: 90px;
 }
-
-.directions__body {}
 
 .directions__filter-box {
   display: flex;
@@ -441,9 +445,6 @@ html, body {
   display: grid;
   grid-template: repeat(2, auto) / repeat(3, 1fr);
   gap: 30px;
-}
-
-.directions__list-item {
 }
 
 .directions__list-link {
@@ -535,15 +536,69 @@ html, body {
 .directions__list-item--management .directions__link-tag {
   background-color: #5A87FC;
 }
+
 .directions__list-item--hr .directions__link-tag {
   background-color: #F89828;
 }
+
 .directions__list-item--design .directions__link-tag {
   background-color: #F52F6E;
 }
+
 .directions__list-item--development .directions__link-tag {
   background-color: #7772F1;
 }
+
 .directions__list-item--empty .directions__link-tag {
   background-color: #fff;
+}
+
+/* ---------------------------- CERTIFICAT ---------------------------- */
+/* ---------------------------- CERTIFICAT ---------------------------- */
+
+.cert {}
+
+.cert__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cert__inner::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -190px;
+  width: 60px;
+  height: 60px;
+  background: url("../images/decor/4.svg") 0 0 no-repeat;
+}
+
+.cert__content {
+  margin-right: 30px;
+  max-width: 400px;
+}
+
+.cert__heading {
+  margin-bottom: 50px;
+}
+
+.cert__text {
+  margin-bottom: 30px;
+}
+
+.cert__logos {
+  display: flex;
+}
+
+.cert__logos-item {
+  margin-right: 40px;
+}
+
+.cert__logos-item:last-child {
+  margin-right: 0;
+}
+
+.cert__image-box {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 }
