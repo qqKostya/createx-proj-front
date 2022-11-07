@@ -52,6 +52,10 @@ html, body {
   padding-bottom: 200px;
 }
 
+.main__info {
+  padding-bottom: 180px;
+}
+
 .button {
   display: inline-block;
   padding: 0 40px;
@@ -1433,4 +1437,115 @@ html, body {
 
 .blog__item--article .blog__image-box span::before {
   background: url("../images/icons/article-icon.svg") 0 0 / 100% no-repeat;
+}
+
+
+/* ============================== INFO ============================== */
+/* ============================== INFO ============================== */
+
+
+
+.info {}
+
+.info__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.info__content {
+  margin-right: 30px;
+}
+
+.info__heading {
+  margin-bottom: 40px;
+}
+
+.info__contacts {
+  margin-bottom: 50px;
+}
+
+.info__contacts-item {
+  margin-bottom: 24px;
+  padding-left: 24px;
+}
+
+.info__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+
+.info__item-top {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787A80;
+  position: relative;
+}
+
+.info__item-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 24px;
+  height: 24px;
+}
+
+.info__itme-link {
+  font-size: 18px;
+  line-height: 150%;
+  transition: all .3s;
+}
+.info__itme-link:hover {
+  color: #FF3F3A;
+}
+
+.info__mail .info__item-top::before {
+  background: url("../images/icons/chat-icon.svg") 0 0 / 100% no-repeat;
+}
+
+.info__tel .info__item-top::before {
+  background: url("../images/icons/phone-icon.svg") 0 0 / 100% no-repeat;
+}
+
+.info__addres .info__item-top::before {
+  background: url("../images/icons/mark-icon.svg") 0 0 / 100% no-repeat;
+}
+
+.info__follow {}
+
+.info__follow-head {
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E212C;
+  margin-bottom: 24px;
+}
+
+.info__socials {
+  display: flex;
+}
+
+
+.info__socials-item {
+  margin-right: 32px;
+}
+
+.info__socials-item:last-child {
+  margin-right: 0;
+}
+
+.info__socials-link path {
+  transition: all .3s;
+}
+.info__socials-link:hover path {
+  fill: #FF3F3A;
+}
+
+.info__map {
+  height: 412px;
+  max-width: 705px;
+  width: 100%;
 }
