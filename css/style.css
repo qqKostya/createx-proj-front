@@ -56,6 +56,10 @@ html, body {
   padding-bottom: 180px;
 }
 
+.main__questions {
+  padding-bottom: 180px;
+}
+
 .button {
   display: inline-block;
   padding: 0 40px;
@@ -1497,6 +1501,7 @@ html, body {
   line-height: 150%;
   transition: all .3s;
 }
+
 .info__itme-link:hover {
   color: #FF3F3A;
 }
@@ -1540,6 +1545,7 @@ html, body {
 .info__socials-link path {
   transition: all .3s;
 }
+
 .info__socials-link:hover path {
   fill: #FF3F3A;
 }
@@ -1548,4 +1554,118 @@ html, body {
   height: 412px;
   max-width: 705px;
   width: 100%;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+/* ============================== questions ============================== */
+/* ============================== questions ============================== */
+
+
+.questions {}
+
+.questions__iner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions__img {}
+
+.questions__content {
+  margin-left: 30px;
+}
+
+.questions__heading {
+  margin-bottom: 40px;
+}
+
+.questions__form {}
+
+.questions__form-row {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.questions__form-label {
+  margin-right: 25px;
+  flex: 1 1 auto;
+}
+
+.questions__form-label:last-child {
+  margin-right: 0;
+}
+
+.questions__text-label {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.questions__form-input,
+.questions__form-text {
+  display: block;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+  padding: 13px 16px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.questions__form-input::placeholder,
+.questions__form-text::placeholder {
+  color: #9A9CA5;
+}
+
+.questions__form-input {}
+
+.questions__form-text {
+  resize: none;
+  height: 128px;
+}
+
+.questions__checkbox-label {
+  display: flex;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.questions__form-checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  margin-top: 5px;
+  margin-right: 12px;
+}
+
+.questions__form-default {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.questions__form-default:checked + .questions__form-custom {
+  background: url("../images/icons/check.svg") 50% 50% no-repeat, #FF3F3A;
+  border: 1px solid #FF3F3A;
+}
+
+.questions__form-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #424551;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.questions__form-btn {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  font-size: 16px;
 }
