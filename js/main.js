@@ -56,20 +56,48 @@ $(function () {
     }
   });
 
-  $(".header__nav-list a, .header__top-btn, .footer__go-top").on("click", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
+  $(".header__nav-list a, .header__top-btn, .footer__go-top").on(
+    "click",
+    function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
 
-    event.preventDefault();
+      event.preventDefault();
 
-    //забираем идентификатор бока с атрибута href
+      //забираем идентификатор бока с атрибута href
 
-    var id = $(this).attr("href"),
-      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      var id = $(this).attr("href"),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
 
-      top = $(id).offset().top - 100;
+        top = $(id).offset().top - 100;
 
-    //анимируем переход на расстояние - top за 1500 мс
+      //анимируем переход на расстояние - top за 1500 мс
 
-    $("body,html").animate({ scrollTop: top }, 800);
+      $("body,html").animate({ scrollTop: top }, 800);
+    }
+  );
+
+  // $(window).on("scroll", function (e) {
+  //   if ($(window).scrollTop() > 0) {
+  //     $(".burger").addClass("burger--follow");
+  //   } else {
+  //     $(".burger").removeClass("burger--follow");
+  //   }
+  // });
+
+  setInterval(() => {
+    if (
+      $(window).scrollTop() > 0 &&
+      $(".header__top").hasClass("header__top--open") === false
+    ) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  }, 0);
+
+  $(".burger, .overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+    $(".overlay").toggleClass("overlay--show");
   });
 });
