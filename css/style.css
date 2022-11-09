@@ -1788,15 +1788,22 @@ html, body {
 
 .footer__form {}
 
-.footer__form-input {
+.footer__form-items {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.footer__form-input {
   padding: 9px 12px;
   width: 100%;
   color: #fff;
-  margin-bottom: 12px;
   position: relative;
+  font-size: 12px;
+  line-height: 150%;
+  background-color: transparent;
 }
 
 .footer__form-input::placeholder {
@@ -1806,14 +1813,26 @@ html, body {
   opacity: 0.6;
 }
 
-.footer__form-input::after {
+
+
+
+
+.footer__form-btn {
+  background: transparent;
+  padding: 10px 12px;
+}
+
+.footer__form-btn::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 16px;
   height: 16px;
   background: url("../images/icons/arrow-right-mini.svg") 0 0 / 100% no-repeat;
+  transform: scale(1.1);
+  transition: all .3s;
+}
+.footer__form-btn:hover::before {
+  transform: scale(1.2);
 }
 
 .footer__form-desc {
