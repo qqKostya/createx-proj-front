@@ -2118,6 +2118,18 @@ html, body {
   .directions__list {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
+
+  .testimonials__slider-wrapper {
+    padding: 0;
+  }
+
+  .testimonials__slide {
+    padding: 30px 15px;
+  }
+
+  .testimonials__arrow {
+    display: none;
+  }
 }
 
 /* ============================== 550 ============================== */
@@ -2171,7 +2183,27 @@ html, body {
     margin: 0 auto 16px;
   }
 
+  .testimonials__slider-wrapper {
+    margin-bottom: 30px;
+  }
 
+  .testimonials__slider-inner {
+    padding-left: 30px;
+  }
+
+  .testimonials__quote {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .testimonials__quote::before {
+    width: 20px;
+    left: -30px;
+  }
+
+  .testimonials__dots button {
+    width: 20px;
+  }
 }
 
 /* ============================== 450 ============================== */

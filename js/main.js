@@ -48,6 +48,13 @@ $(function () {
     dots: true,
     appendDots: $(".testimonials__dots"),
     waitForAnimate: false,
+    // responsive: [
+    //   {
+    //     breakpoint: 700,
+    //     settings: {
+    //     },
+    //   },
+    // ],
   });
   $(".testimonials__prev").on("click", function (e) {
     e.preventDefault();
