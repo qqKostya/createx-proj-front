@@ -1164,6 +1164,10 @@ html, body {
   height: 90px;
 }
 
+.companies__grid-wrapper {
+  display: flex;
+}
+
 .companies__heading {
   margin-bottom: 60px;
 }
@@ -1171,7 +1175,8 @@ html, body {
 .companies__grid {
   display: grid;
   grid-template: repeat(2, auto) / repeat(6, 1fr);
-  gap: 40px 100px;
+  gap: 40px 8.1%;
+  margin: 0 auto;
 }
 
 .companies__grid-item {}
@@ -2060,6 +2065,10 @@ html, body {
   .cert__heading {
     text-align: center;
   }
+
+  .companies__grid {
+    gap: 40px 5%;
+  }
 }
 
 /* ============================== 900 ============================== */
@@ -2091,6 +2100,10 @@ html, body {
 
   .directions__link-content {
     padding: 24px 5px 5px;
+  }
+
+  .companies__grid {
+    grid-template: repeat(3, auto) / repeat(4, 1fr);
   }
 }
 
@@ -2204,6 +2217,10 @@ html, body {
   .testimonials__dots button {
     width: 20px;
   }
+
+  .companies__grid {
+    grid-template: repeat(4, auto) / repeat(3, 1fr);
+  }
 }
 
 /* ============================== 450 ============================== */
@@ -2244,5 +2261,9 @@ html, body {
 
   .cert__logos-item:last-child {
     margin: 0;
+  }
+
+  .companies__grid {
+    grid-template: repeat(6, auto) / repeat(2, 1fr);
   }
 }
