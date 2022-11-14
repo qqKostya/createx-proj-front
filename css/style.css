@@ -407,6 +407,7 @@ html, body {
 .about__numbers {
   margin-left: 30px;
   align-self: center;
+  white-space: nowrap;
 }
 
 .about__number {
@@ -2028,7 +2029,13 @@ html, body {
 
   /* --------------------------------------------------------- */
 
+  .heading__title {
+    font-size: 37px;
+  }
 
+  .about__img {
+    max-width: 400px;
+  }
 }
 
 /* ============================== 900 ============================== */
@@ -2045,8 +2052,68 @@ html, body {
   .header__row {
     display: none;
   }
+
+  .about__img {
+    display: none;
+  }
 }
 
+
+/* ============================== 700 ============================== */
+
+@media (max-width: 700px) {
+  .about__createx {
+    margin-bottom: 60px;
+  }
+
+  .about__values {
+    flex-direction: column;
+  }
+
+  .about__image-box {
+    display: none;
+  }
+
+  .about__numbers {
+    margin: 0;
+    align-self: flex-start;
+  }
+}
+
+/* ============================== 550 ============================== */
+
+@media (max-width: 550px) {
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .heading__subtitle {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .heading__title {
+    font-size: 25px;
+  }
+
+  .about__text {
+    margin-bottom: 30px;
+  }
+
+  .about__paragraph {
+    font-size: inherit;
+    margin-bottom: 10px;
+  }
+
+  .about__btn-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about__btn {
+    margin: 0 0 30px 0;
+  }
+}
 
 /* ============================== 450 ============================== */
 
@@ -2065,8 +2132,10 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .header__content-btn {
     margin: 0 0 30px 0;
     text-align: center;
   }
+
 }
