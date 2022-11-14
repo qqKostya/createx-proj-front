@@ -2161,6 +2161,17 @@ html, body {
   .directions__list-item--empty {
     display: none;
   }
+
+  .team__slider-arrow {
+    display: none;
+  }
+
+  .team__image-box {
+    max-width: 300px;
+    margin: 0 auto 16px;
+  }
+
+
 }
 
 /* ============================== 450 ============================== */
