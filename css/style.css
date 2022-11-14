@@ -1904,6 +1904,21 @@ html, body {
 
 /* ============================== MEDIA ============================== */
 /* ============================== MEDIA ============================== */
+/* ============================== 1200 ============================== */
+
+@media (max-width: 1200px) {
+  .header__title {
+    font-size: 52px;
+    max-width: 376px;
+  }
+
+  .header__img {
+    max-width: 450px;
+  }
+
+}
+
+/* ============================== 1100 ============================== */
 
 @media (max-width: 1100px) {
   .burger {
@@ -2010,12 +2025,48 @@ html, body {
   .header__user-nav {
     margin-bottom: 30px;
   }
+
+  /* --------------------------------------------------------- */
+
+
 }
 
-@media (max-width: 400px) {
+/* ============================== 900 ============================== */
+
+@media (max-width: 900px) {
+  .header__content {
+    margin: 0;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  .header__row {
+    display: none;
+  }
+}
+
+
+/* ============================== 450 ============================== */
+
+@media (max-width: 450px) {
   .header__top {
     min-width: none;
     left: 0;
+  }
 
+  .header__title {
+    max-width: none;
+    font-size: 40px;
+  }
+
+  .header__content-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__content-btn {
+    margin: 0 0 30px 0;
+    text-align: center;
   }
 }
