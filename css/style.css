@@ -1942,6 +1942,32 @@ html, body {
     max-width: 450px;
   }
 
+  .blog__item-info {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 8px 0;
+  }
+
+  .blog__info-el {
+    padding: 0;
+  }
+
+  .blog__info-el::after {
+    content: none;
+  }
+
+  .blog__info-dir {
+    order: 1;
+  }
+
+  .blog__info-date {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .blog__info-time {
+    order: 2;
+  }
 }
 
 /* ============================== 1100 ============================== */
@@ -2091,6 +2117,7 @@ html, body {
   .program__content {
     margin-right: 0;
   }
+
   .program__image {
     display: none;
   }
@@ -2129,6 +2156,15 @@ html, body {
 
   .companies__grid {
     grid-template: repeat(3, auto) / repeat(4, 1fr);
+  }
+
+  .blog__row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .blog__item {
+    padding: 0 0 30px 0;
   }
 }
 
@@ -2250,6 +2286,12 @@ html, body {
   .program__acc-head {
     font-size: inherit;
     line-height: inherit;
+  }
+
+  .blog__top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
   }
 }
 
