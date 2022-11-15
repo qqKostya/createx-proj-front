@@ -1620,7 +1620,14 @@ html, body {
   justify-content: space-between;
 }
 
-.questions__img {}
+.questions__img {
+  min-width: 350px;
+}
+
+.questions__img img {
+  width: 100%;
+  height: 100%;
+}
 
 .questions__content {
   margin-left: 30px;
@@ -2181,6 +2188,15 @@ html, body {
     height: 200px;
     max-width: none;
   }
+
+  .questions__img {
+    display: none;
+  }
+
+  .questions__content {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 
@@ -2308,6 +2324,34 @@ html, body {
     align-items: flex-start;
     margin-bottom: 30px;
   }
+
+  .questions__form-row {
+    flex-direction: column;
+  }
+
+  .questions__form-label {
+    font-size: 14px;
+    margin: 0px 0px 24px 0px;
+  }
+
+  .questions__form-label:last-child {
+    margin: 0px;
+  }
+
+  .questions__form-input,
+  .questions__form-text {
+    margin-top: 0;
+  }
+
+  .questions__text-label {
+    font-size: 14px;
+
+  }
+
+  .questions__checkbox-label {
+    font-size: 14px;
+    margin: 0 0 24px 0;
+  }
 }
 
 /* ============================== 450 ============================== */
@@ -2357,5 +2401,5 @@ html, body {
   .info__socials-item {
     margin-right: 15px;
   }
-  
+
 }
