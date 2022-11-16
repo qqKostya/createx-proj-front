@@ -123,9 +123,13 @@ $(function () {
     }
   }, 0);
 
-  $(".burger, .overlay").on("click", function (e) {
+  $(".burger, .overlay, .header__top a").on("click", function (e) {
     e.preventDefault();
     $(".header__top").toggleClass("header__top--open");
     $(".overlay").toggleClass("overlay--show");
+  });
+
+  $(".footer__top-title--slide").on("click", function () {
+    $(this).next().slideToggle()
   });
 });
