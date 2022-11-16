@@ -20,18 +20,7 @@ html, body {
   height: 100%;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-  background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  opacity: 0;
-  transition: all .3s;
-}
+
 
 .overlay--show {
   visibility: visible;
@@ -1981,6 +1970,19 @@ html, body {
 /* ============================== 1100 ============================== */
 
 @media (max-width: 1100px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+  }
+
   .burger {
     position: fixed;
     top: 0;
@@ -2279,6 +2281,34 @@ html, body {
     font-size: 25px;
   }
 
+  .main__about,
+  .main__program {
+    padding: 60px 0 100px;
+  }
+
+  .main__directions,
+  .main__testimonials,
+  .main__blog,
+  .main__info {
+    padding-bottom: 100px;
+  }
+
+  .main__directions {
+    margin-bottom: 0;
+  }
+
+  .main__team {
+    padding: 120px 0 100px;
+  }
+
+  .main__companies {
+    padding-bottom: 40px;
+  }
+
+  .main__questions {
+    padding-bottom: 40px;
+  }
+
   .about__text {
     margin-bottom: 30px;
   }
@@ -2295,6 +2325,10 @@ html, body {
 
   .about__btn {
     margin: 0 0 30px 0;
+  }
+
+  .about__btn:last-child {
+    margin: 0px;
   }
 
   .directions__list {
